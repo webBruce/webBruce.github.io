@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>丁常根的个人简历</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" >
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+        position: relative;
+        background: #32353a;
+        font-size: 15px;
+        font-weight: 300;
+        color: #b7bcbe;
+        padding: 20px;
+    }
+    header{
+        margin-top: 20px;
+        padding:0 20px;
+        background-color:#32353a;
+    }
+    .navbar-inverse{
+        background-color:#32353a;
+    }
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+        color: #fff;
+        background-color: #4e91c9;
+    }
+    span[class*="border-"] {
+        position: fixed;
+        background: #1f2122;
+    }
+    .border-top {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+    }
+    .border-left {
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 100%;
+    }
+    .border-right {
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100%;
+    }
+    .border-bottom {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+    }
+    .shape-1 {
+        position: fixed;
+        top: 0px;
+        right: 10px;
+        border-width: 50px;
+        border-color:#1f2122 #1f2122 transparent transparent ;
+        border-style: dashed dashed solid dashed;
+    }
+    .shape-2 {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        border-width: 50px;
+        border-color: transparent transparent #1f2122 #1f2122;
+        border-style: dashed dashed solid dashed;
+    }
+    #section1 {padding-top:10px;height:500px;color: #fff; /*background-color: #1E88E5;*/}
+    #section2 {padding-top:10px;height:500px;color: #fff; /*background-color: #673ab7;*/}
+    #section3 {padding-top:10px;height:500px;color: #fff; /*background-color: #999;   */}
+    #section4 {padding-top:10px;height:500px;color: #fff; /*background-color: #00bcd4;*/}
+
+    @-webkit-keyframes umScaleIn {
+        0% { opacity: 0;-webkit-transform: scale(1.2); }
+        100% { opacity: 1;-webkit-transform: scale(1); }
+    }
+
+    @-moz-keyframes umScaleIn {
+        0% { opacity: 0;-moz-transform: scale(1.2); }
+        100% { opacity: 1;-moz-transform: scale(1); }
+    }
+
+    @-o-keyframes umScaleIn {
+        0% { opacity: 0;-o-transform: scale(1.2); }
+        100% { opacity: 1;-o-transform: scale(1); }
+    }
+
+    @-ms-keyframes umScaleIn {
+        0% { opacity: 0;-ms-transform: scale(1.2); }
+        100% { opacity: 1;-ms-transform: scale(1); }
+    }
+
+    @keyframes umScaleIn {
+        0% { opacity: 0;transform: scale(1.2); }
+        100% { opacity: 1;transform: scale(1); }
+    }
+
+    .umScaleIn {
+        -webkit-animation-name: umScaleIn;
+        -moz-animation-name: umScaleIn;
+        -ms-animation-name: umScaleIn;
+        -o-animation-name: umScaleIn;
+        animation-name: umScaleIn;
+
+        -webkit-animation-timing-function: ease-in;
+        -moz-animation-timing-function: ease-in;
+        -ms-animation-timing-function: ease-in;
+        -o-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    .umScaleIn {
+        -webkit-animation-duration: .4s;
+        -moz-animation-duration: .4s;
+        -ms-animation-duration: .4s;
+        -o-animation-duration: .4s;
+        animation-duration: .4s;
+    }
+    .glyphicon-fire{
+        color:#B1191A;
+    }
+    #section3 li{
+        margin:10px 0;
+        padding:0 20px;
+    }
+    .cc {
+         -webkit-animation-delay: .3s;
+         -ms-animation-delay: .3s;
+         -moz-animation-delay: .3s;
+         animation-delay: .3s;
+     }
+    .dd {
+        -webkit-animation-delay: .3s;
+        -ms-animation-delay: .3s;
+        -moz-animation-delay: .3s;
+        animation-delay: .3s;
+    }
+    .ee {
+        -webkit-animation-delay: .6s;
+        -ms-animation-delay: .6s;
+        -moz-animation-delay: .6s;
+        animation-delay: .6s;
+    }
+    .ff {
+        -webkit-animation-delay: .6s;
+        -ms-animation-delay: .6s;
+        -moz-animation-delay: .6s;
+        animation-delay: .6s;
+    }
+    .gg {
+        -webkit-animation-delay: .9s;
+        -ms-animation-delay: .9s;
+        -moz-animation-delay: .9s;
+        animation-delay: .9s;
+    }
+    .hh {
+        -webkit-animation-delay: .9s;
+        -ms-animation-delay: .9s;
+        -moz-animation-delay: .9s;
+        animation-delay: .9s;
+    }
+    .ii {
+        -webkit-animation-delay: 1.2s;
+        -ms-animation-delay: 1.2s;
+        -moz-animation-delay: 1.2s;
+        animation-delay: 1.2s;
+    }
+    .jj {
+        -webkit-animation-delay: 1.2s;
+        -ms-animation-delay: 1.2s;
+        -moz-animation-delay: 1.2s;
+        animation-delay: 1.2s;
+    }
+</style>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" >
+<!--周边-->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+<span class="shape-1"></span>
+<span class="shape-2"></span>
+<!--导航-->
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="position: static;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="margin:0 100px 0 0">个人简历</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar" style="padding-bottom: 20px;">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#section1">基本信息</a></li>
+                        <li><a href="#section2">兴趣爱好</a></li>
+                        <li><a href="#section3">专业技能</a></li>
+                        <li><a href="#section4">项目参考</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--区块-->
+<div>
+    <div id="section1" class="container-fluid sec">
+        <h3 class="animated  fadeInDown text-center" style="margin-bottom: 20px;">基本信息</h3>
+        <table class="table table-bordered animated  fadeInUp">
+            <tbody>
+            <tr>
+                <td>姓名：</td>
+                <td>丁常根</td>
+            </tr>
+            <tr>
+                <td>年龄：</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>身高：</td>
+                <td>168cm</td>
+            </tr>
+            <tr>
+                <td>体重：</td>
+                <td>70kg</td>
+            </tr>
+            <tr>
+                <td>毕业院校：</td>
+                <td>大连职业技术学院</td>
+            </tr>
+            <tr>
+                <td>专业：</td>
+                <td>机电一体化</td>
+            </tr>
+            <tr>
+                <td>现居地：</td>
+                <td>深圳市福田区</td>
+            </tr>
+            <tr>
+                <td>籍贯：</td>
+                <td>湖南省怀化市</td>
+            </tr>
+            <tr>
+                <td>手机：</td>
+                <td>189-8879-7212</td>
+            </tr>
+            <tr>
+                <td>邮箱：</td>
+                <td>1162151166@qq.com</td>
+            </tr>
+            <tr>
+                <td>GitHub：</td>
+                <td>https://webbruce.github.io/</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="section2" class="container-fluid sec hidden">
+        <h3 class="animated  slideInDown text-center" style="margin-bottom: 20px;">兴趣爱好</h3>
+        <div class="row text-center" >
+            <div class="col-md-6 col-xs-12 ">
+                <div class="animated umScaleIn" style="border:3px solid #1a1c1f;margin-bottom: 20px;">
+                    <div style="height: 200px;" class="bg-success">
+                        <h2 style="line-height: 200px;color:#333;"><span class="glyphicon glyphicon-tint"></span> 运动</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 ">
+                <div class="animated umScaleIn" style="border:3px solid #1a1c1f;margin-bottom: 20px;">
+                    <div style="height: 200px;" class="bg-info">
+                        <h2 style="line-height: 200px;color:#333;"><span class="glyphicon glyphicon-pencil"></span> 书法</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 ">
+                <div class="animated umScaleIn" style="border:3px solid #1a1c1f;margin-bottom: 20px;">
+                    <div style="height: 200px;" class="bg-primary">
+                        <h2 style="line-height: 200px;color:#333;"><span class="glyphicon glyphicon-music"></span> 唱歌</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 ">
+                <div class="animated umScaleIn" style="border:3px solid #1a1c1f;margin-bottom: 20px;">
+                    <div style="height: 200px;" class="bg-danger">
+                        <h2 style="line-height: 200px;color:#333;"><span class="glyphicon glyphicon-plane"></span> 旅行</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3" class="container-fluid sec hidden">
+        <h3 class="animated  fadeInDown text-center">专业技能</h3>
+        <ul class="list-unstyled" style="font-size:20px;">
+           <li class="aa animated slideInLeft"><span class="glyphicon glyphicon-fire"></span>	熟悉PS、FW等常用设计软件以及Auxe原型设计软件的使用</li>
+           <li class="bb animated slideInRight"><span class="glyphicon glyphicon-fire"></span>	熟练操作HTML5+CSS3对JavaScript语言有深入的学习和理解</li>
+           <li class="cc animated slideInLeft"><span class="glyphicon glyphicon-fire"></span>	熟悉Bootstrap来制作响应式网站以及webapp的制作</li>
+           <li class="dd animated slideInRight"><span class="glyphicon glyphicon-fire"></span>	熟悉jquery, zepto等流行常用的开发库</li>
+           <li class="ee animated slideInLeft"><span class="glyphicon glyphicon-fire"></span>	熟悉angular.js语法并构建基于ionic框架的Hybrid混合app</li>
+           <li class="ff animated slideInRight"><span class="glyphicon glyphicon-fire"></span>	熟悉vue.js的使用并制作基于vue的技术栈的系统,并持续关注react相关技术</li>
+           <li class="gg animated slideInLeft"><span class="glyphicon glyphicon-fire"></span>	常用项目构建工具gulp、webpack</li>
+           <li class="hh animated slideInRight"><span class="glyphicon glyphicon-fire"></span>	熟悉node开发环境以及express框架的使用</li>
+           <li class="ii animated slideInLeft"><span class="glyphicon glyphicon-fire"></span>	有一定的PHP+mysql基础和开发使用经验</li>
+           <li class="jj animated slideInRight"><span class="glyphicon glyphicon-fire"></span>	和java开发团队有过密切的配合</li>
+
+        </ul>
+    </div>
+    <div id="section4" class="container-fluid sec hidden">
+        <h3 class="animated  slideInDown text-center" style="margin-bottom: 20px;">项目参考</h3>
+        <div class="row text-center" >
+            <div class="col-md-6 col-xs-12 ">
+                <a href="http://www.chanrongdai.com">
+                    <div class="animated zoomIn" style="border:3px solid #1a1c1f;margin-bottom: 20px;">
+                        <div style="height: 200px;" class="bg-success">
+                            <h2 style="line-height: 200px;color:#333;">P2P金融项目</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-xs-12 ">
+                <a href="http://www.hongmubuluo.com">
+                 <div class="animated zoomIn" style="border:3px solid #1a1c1f;margin-bottom: 20px;">
+                    <div style="height: 200px;" class="bg-info">
+                        <h2 style="line-height: 200px;color:#333;">红木论坛项目</h2>
+                    </div>
+                </div>
+                </a>
+
+            </div>
+            <div class="col-md-6 col-xs-12 ">
+                <a href="http://www.gearbest.com/">
+                 <div class="animated zoomIn" style="border:3px solid #1a1c1f;margin-bottom: 20px;">
+                    <div style="height: 200px;" class="bg-primary">
+                        <h2 style="line-height: 200px;color:#333;">B2C商城项目</h2>
+                    </div>
+                </div>
+                </a>
+
+            </div>
+            <div class="col-md-6 col-xs-12 ">
+                <a href="http://m.gearbest.com/">
+                 <div class="animated zoomIn" style="border:3px solid #1a1c1f;margin-bottom: 20px;">
+                    <div style="height: 200px;" class="bg-danger">
+                        <h2 style="line-height: 200px;color:#333;">B2C商城项目</h2>
+                    </div>
+                </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.nav li').on('click',function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.sec').eq($(this).index()).removeClass('hidden').siblings().addClass('hidden')
+        })
+    })
+</script>
+</body>
+</html>
